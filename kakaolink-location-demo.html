@@ -1,46 +1,49 @@
-
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width"/>
-<title>KakaoLink v2 Demo(Default / Location) - Kakao JavaScript SDK</title>
+<title>KakaoLink v2 Demo(Default / Feed) - Kakao JavaScript SDK</title>
 <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
 
 </head>
 <body>
-<div class="panel panel-default">
-<div class="panel-heading">
-<h3 class="panel-title">
-[카카오링크 v2] 링크 버튼 (디폴트, 로케이션)
-</h3>
-</div>
-<div class="panel-body">
-<h4>카카오톡 앱이 설치되어 있는 모바일 기기라면 아래의 링크가 동작합니다.</h4>
 <a id="kakao-link-btn" href="javascript:;">
 <img src="//dev.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"/>
 </a>
-</div>
-</div>
 <script type='text/javascript'>
   //<![CDATA[
     // // 사용할 앱의 JavaScript 키를 설정해 주세요.
-    Kakao.init('3e786f8df14fcfc89d159421a6a7c9b6');
+    Kakao.init('YOUR APP KEY');
     // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
     Kakao.Link.createDefaultButton({
       container: '#kakao-link-btn',
-      objectType: 'location',
-      address: '성남시 분당구 판교역로 235',
-      addressTitle: '카카오 판교오피스',
+      objectType: 'feed',
       content: {
-    	title: '카카오 판교오피스',
-    	description: '카카오 판교오피스 위치입니다.',
-    	imageUrl: 'http://www.kakaocorp.com/images/logo/og_daumkakao_151001.png',
-    	link: {
-    	  mobileWebUrl: 'https://dev.kakao.com'
-    	}
-      }
+        title: '디저트 사진',
+        description: '아메리카노, 빵, 케익',
+        imageUrl: 'http://mud-kage.kakao.co.kr/dn/NTmhS/btqfEUdFAUf/FjKzkZsnoeE4o19klTOVI1/openlink_640x640s.jpg',
+        link: {
+          mobileWebUrl: 'https://dev.kakao.com'
+        }
+      },
+      social: {
+          likeCount: 10,
+        commentCount: 20,
+        sharedCount: 30
+      },
+      buttons: [{
+        title: '웹으로 이동',
+        link: {
+          mobileWebUrl: 'https://dev.kakao.com'
+        }
+      }, {
+        title: '앱으로 이동',
+        link: {
+          mobileWebUrl: 'https://dev.kakao.com'
+        }
+      }]
     });
   //]]>
 </script>
