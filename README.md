@@ -1,2 +1,1 @@
-# Wedding Invitation
-카카오톡 결혼식 초정장 링크를 만들기 위한 github 입니다.
+#SKYCOCK 정기모임 안내장
