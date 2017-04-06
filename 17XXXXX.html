@@ -18,30 +18,30 @@
 </div>
 <div class="panel-body">
 <h4>카카오톡 앱이 설치되어 있는 모바일 기기라면 아래의 링크가 동작합니다.</h4>
-<a id="kakao-link-btn" href="javascript:sendLink()">
+<a id="kakao-link-btn" href="javascript:;">
 <img src="//dev.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"/>
 </a>
 </div>
 </div>
 <script type='text/javascript'>
-    // 사용할 앱의 JavaScript 키를 설정해 주세요.
+  //<![CDATA[
+    // // 사용할 앱의 JavaScript 키를 설정해 주세요.
     Kakao.init('495c037a95a202e8a2c60bb4a2cf93f0');
-    // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
-    function sendLink() {
-      Kakao.Link.sendDefault({
-        objectType: 'location',
-        address: '서울특별시 성북구 안암동2가 93',
-        addressTitle: '서울안암초등학교',
-        content: {
-    	  title: '스카이콕 4월 16일 정기모임',
-    	  description: '"쌀쌀한 봄바람이 아침저녁으로 옷깃을 여미게 합니다. 일교차가 크니 항상 감기 조심, 건강조심 하시기 바랍니다."\n\n시간:12시30분 ~ 18시\n\n장소:서울안암초등학교 실내체육관\n\n준비물:운동복, 실내운동화, 라켓(미소지시 대여가능)\n\n알림:최대 40명 신청가능, 신청마감 토요일 21시',
-    	  imageUrl: 'http://i.imgur.com/AhC7qyk.png',
-    	  link: {
-    	    mobileWebUrl: 'http://m.cafe.daum.net/SKYCOCK/KkPE/249?svc=cafeapp'
-    	  }
-        }
-      });
-    }
+    // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
+    Kakao.Link.createDefaultButton({
+      container: '#kakao-link-btn',
+      objectType: 'location',
+      address: '성남시 분당구 판교역로 235',
+      addressTitle: '카카오 판교오피스',
+      content: {
+    	title: '4월 16일 스카이콕 245회 정기모임',
+    	description: '"쌀쌀한 봄바람이 아침저녁으로 옷깃을 여미게 합니다. 일교차가 크니 항상 감기 조심, 건강조심 하시기 바랍니다."\n\n시간:12시30분 ~ 18시\n\n준비물:운동복, 실내운동화, 라켓(미소지시 대여가능)\n\n알림:최대 40명 신청가능, 신청마감 토요일 21시',
+    	imageUrl: 'http://i.imgur.com/AhC7qyk.png',
+    	link: {
+    	  mobileWebUrl: 'http://m.cafe.daum.net/SKYCOCK/KkPE/249?svc=cafeapp'
+    	}
+      }
+    });
   //]]>
 </script>
 
