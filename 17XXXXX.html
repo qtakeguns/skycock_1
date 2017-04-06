@@ -5,7 +5,7 @@
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width"/>
-<title>[카카오링크 v2] 스카이콕 정기모임 안내</title>
+<title>KakaoLink v2 Demo(Default / Location) - Kakao JavaScript SDK</title>
 <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
 
 </head>
@@ -13,7 +13,7 @@
 <div class="panel panel-default">
 <div class="panel-heading">
 <h3 class="panel-title">
-[카카오링크 v2] 스카이콕 정기모임 안내
+[카카오링크 v2] 링크 버튼 (디폴트, 로케이션)
 </h3>
 </div>
 <div class="panel-body">
@@ -26,7 +26,7 @@
 <script type='text/javascript'>
   //<![CDATA[
     // // 사용할 앱의 JavaScript 키를 설정해 주세요.
-    Kakao.init('495c037a95a202e8a2c60bb4a2cf93f0');
+    Kakao.init('3e786f8df14fcfc89d159421a6a7c9b6');
     // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
     Kakao.Link.createDefaultButton({
       container: '#kakao-link-btn',
@@ -34,11 +34,11 @@
       address: '성남시 분당구 판교역로 235',
       addressTitle: '카카오 판교오피스',
       content: {
-    	title: '4월 16일 스카이콕 245회 정기모임',
-    	description: '"쌀쌀한 봄바람이 아침저녁으로 옷깃을 여미게 합니다. 일교차가 크니 항상 감기 조심, 건강조심 하시기 바랍니다."\n\n시간:12시30분 ~ 18시\n\n준비물:운동복, 실내운동화, 라켓(미소지시 대여가능)\n\n알림:최대 40명 신청가능, 신청마감 토요일 21시',
-    	imageUrl: 'http://i.imgur.com/AhC7qyk.png',
+    	title: '카카오 판교오피스',
+    	description: '카카오 판교오피스 위치입니다.',
+    	imageUrl: 'http://www.kakaocorp.com/images/logo/og_daumkakao_151001.png',
     	link: {
-    	  mobileWebUrl: 'http://m.cafe.daum.net/SKYCOCK/KkPE/249?svc=cafeapp'
+    	  mobileWebUrl: 'https://dev.kakao.com'
     	}
       }
     });
@@ -46,4 +46,9 @@
 </script>
 
 </body>
+<!--------------- 아래의 코드는 삭제해주세요. 샘플이 제대로 동작하지 않을 수 있습니다. ---------------------->
+<script src="/resource/Message.js"></script>
+<script src="/vassets/javascripts/demos_layout.js"></script>
+<link rel="stylesheet" media="screen" href="/assets/bootstrap/css/bootstrap.min.css"/>
+<link rel="stylesheet" media="screen" href="/vassets/stylesheets/docs_js_demos.css"/>
 </html>
