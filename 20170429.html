@@ -1,0 +1,39 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	
+	<title>SKYCOCK 2017년 봄 MT　안내</title>
+	<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+</head>
+<body>
+	<h3>카카오톡 링크는 카카오톡 앱이 설치되어 있는 모바일 기기에서만 전송 가능합니다.</h3>
+	<a id="kakao-link-btn" href="javascript:;">
+		<img src="http://dn.api1.kage.kakao.co.kr/14/dn/btqa9B90G1b/GESkkYjKCwJdYOkLvIBKZ0/o.jpg" />
+	</a>
+
+	<script>
+		// 사용할 앱의 JavaScript 키를 설정해 주세요.
+		Kakao.init('495c037a95a202e8a2c60bb4a2cf93f0');
+
+		// 카카오톡 링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
+		Kakao.Link.createTalkLinkButton({
+					container : '#kakao-link-btn',
+					label : '🔔2017 스카이콕 봄 MT🔔\n\n"스카이콕의 꽃, 스카이콕　봄 MT를 갑시다! 여러분 5월 연휴 시작 전, 알찬　하루를 스카이콕 회원들과 함께 보내는 건 어떨까요? 배 터지는 고기파티, 신나는 레크레이션, 기대되는 경품행사 그리고 불타는 밤! 오로지 스카이콕 회원들의 재미만을 위해 준비 했습니다. 다들 빨리 참석 신청 하세요! HURRY UP!"\n\n일시:4/29~30(선발대:오후2시도착, 후발대:오후6시30분전도착)\n\n장소:양평 산내음펜션(주소:경기 양평군 서종면 황순원로 470-21)\n\n준비물:개인옷,세면도구,등\n\n회비:5만원(게스트 참석가능), 입금계좌:국민은행 432101-01-250235 전민철(애런)\n\n알림:기타 안내 사항은 카페 공지사항 참조',
+					image : {
+						src : 'http://i.imgur.com/AhC7qyk.png',
+						width : '151',
+						height : '81'
+					},
+					webButton : {
+						text : 'MT 신청 및 안내',
+						url : 'http://m.cafe.daum.net/SKYCOCK/KkOn/94?svc=cafeapp' // 앱 설정의 웹 플랫폼에 등록한 도메인의 URL이어야 합니다.
+					}
+			
+				});
+	</script>
+</body>
+</html>
